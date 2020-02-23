@@ -96,14 +96,14 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-  "Street": streets,
-  "Satellite Streets": satelliteStreets
+  "Streets": streets,
+  "Satellite": satelliteStreets
 };
 
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
-	center: [43.7, -79.3],
-  zoom: 11,
+	center: [39.5, -98.5],
+  zoom: 3,
 	layers: [satelliteStreets]
 });
 
@@ -114,14 +114,20 @@ L.control.layers(baseMaps).addTo(map);
 // streets.addTo(map);
 
 // Accessing the airport GeoJSON URL
-let toronto = "https://raw.githubusercontent.com/Calistic/Mapping_Earthquakes/master/torontoNeighborhoods.json";
+// let toronto = "https://raw.githubusercontent.com/Calistic/Mapping_Earthquakes/master/torontoNeighborhoods.json";
 
-// Grabbing our GeoJSON data.
-d3.json(toronto).then(function(data) {
-  console.log(data);
+// // Grabbing our GeoJSON data.
+// d3.json(toronto).then(function(data) {
+//   console.log(data);
+//   // Creating a GeoJSON layer with the retrieved data.
+//   L.geoJson(data).addTo(map);
+//   });
+
+// Retrieve the earthquake GeoJSON data.
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data) {
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJson(data).addTo(map);
-  });
+});
 
 //  Add a marker to the map for Los Angeles, California.
 // let marker = L.marker([34.0522, -118.2437]).addTo(map);
