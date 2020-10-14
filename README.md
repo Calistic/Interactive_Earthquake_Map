@@ -1,6 +1,8 @@
 # Mapping Earthquakes
 
-## Purpos
+### Deployed Script: 
+
+## Purpose
 
 ## Approach
 
