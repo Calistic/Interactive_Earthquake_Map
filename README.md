@@ -1,6 +1,6 @@
 # Mapping Earthquakes
 
-### Deployed Script: 
+### Deployed Script: https://calistic.github.io/Mapping_Earthquakes/
 
 ## Purpose
 Create an interactive map that displays recent earth quake activity.
