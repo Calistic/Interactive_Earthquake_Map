@@ -24,7 +24,7 @@ Create an interactive map that displays recent earth quake activity.
 - Render maps on a server and deploy on GitHub Pages.
 
 ## Code
-[JavaScript](https://github.com/Calistic/Mapping_Earthquakes/tree/master/static/js)
+[JavaScript](https://github.com/Calistic/Interactive_Earthquake_Map/blob/master/static/js/logic.js)
 
 [CSS](https://github.com/Calistic/Mapping_Earthquakes/blob/master/static/css/style.css)
 
