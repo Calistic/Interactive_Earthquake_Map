@@ -3,7 +3,7 @@
 ## Link to Interactive Map
 https://calistic.github.io/Interactive_Earthquake_Map/
 
-![example](https://github.com/Calistic/Interactive_Earthquake_Map/blob/master/Photos/earthquakeDashboard.JPG
+![example](https://github.com/Calistic/Interactive_Earthquake_Map/blob/master/Photos/earthquakeDashboard.JPG)
 
 ## Purpose
 Create an interactive map that displays recent earth quake activity.
